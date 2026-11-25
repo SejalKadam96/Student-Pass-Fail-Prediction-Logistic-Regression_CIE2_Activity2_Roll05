@@ -1,16 +1,19 @@
-# Decision Log – Simple Linear Regression
+# Decision Log – Logistic Regression
 
 ## Decision 1: Dataset Selection
-I selected the Salary Dataset from Kaggle because it contains years of experience and salary information, which is suitable for Simple Linear Regression.
+I selected the Social Network Ads dataset from Kaggle because it is suitable for predicting customer purchase decisions.
 
 ## Decision 2: Feature Selection
-I selected YearsExperience as the input feature and Salary as the target variable because I wanted to predict salary based on work experience.
+I selected Age and EstimatedSalary as input features and Purchased as the target variable.
 
 ## Decision 3: Train-Test Split
-I used an 80:20 train-test split to train the model on 80% of the data and evaluate it on the remaining 20%.
+I used an 80:20 train-test split to train and test the model.
 
 ## Decision 4: Model Selection
-I selected Simple Linear Regression because there is one input feature and one numerical output.
+I selected Logistic Regression because the target variable has two classes: Purchased and Not Purchased.
 
-## Decision 5: Model Evaluation
-I used MAE, MSE, RMSE and R² Score to check the prediction performance of the model.
+## Decision 5: Decision Threshold
+I selected a threshold of 0.5 to classify predictions. A probability of 0.5 or above is classified as Purchased, otherwise Not Purchased.
+
+## Decision 6: Model Evaluation
+I used Accuracy, Precision, Recall, F1-score and ROC-AUC to evaluate the classification model.
